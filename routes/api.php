@@ -21,4 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Post Endpoint
 Route::get('/posts/top', [TestRESTController::class, 'TopPosts']);
-Route::get('/comments/search', [TestRESTController::class, 'searchComments']);
+Route::post('/comments/search', [TestRESTController::class, 'searchComments']);
